@@ -1,0 +1,48 @@
+{
+  "plugins": [
+    "babel"
+  ],
+   "parser": "babel-eslint",
+   "extends": "airbnb",
+   "env": {
+     "node": true,
+     "mocha": true,
+     "es6": true,
+     "jasmine": true,
+   },
+   "globals": {
+     "__DEV__": false,
+     "jest": true
+   },
+   "rules": {
+     "generator-star-spacing": 0,
+     "babel/generator-star-spacing": ["error", { before: false, after: true }],
+     "babel/new-cap": ["error", { "capIsNew": false, "newIsCap": true }],
+     "babel/array-bracket-spacing": 1,
+     "babel/object-shorthand": 1,
+     "babel/arrow-parens": 1,
+     "babel/no-await-in-loop": 1,
+     "babel/func-params-comma-dangle": 1,
+     "arrow-parens": 0,
+     "no-underscore-dangle": 0,
+     "import/newline-after-import": 0,
+     "import/prefer-default-export": 0,
+     "new-parens": 0,
+     "global-require": 0,
+     "react/jsx-no-bind": 0,
+     "react/jsx-uses-react": 1,
+     "react/require-default-props": 0,
+     "import/no-unresolved": 0,
+     "react/prefer-stateless-function": 0,
+     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+     "no-constant-condition": 0,
+     "no-console": 2,
+     "new-cap": [2, {"capIsNew": false, "newIsCap": true}], // For Record() etc.
+     "default-case": 0,
+     "no-use-before-define": 0,
+     "react/sort-comp": 0,
+     "quotes": [2, "single", {"allowTemplateLiterals": true}],
+     "strict": 0,
+     "no-unused-expressions": 0,
+   }
+ }
