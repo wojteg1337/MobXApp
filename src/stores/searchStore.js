@@ -4,7 +4,7 @@ import axios from 'axios';
 import { observable } from 'mobx';
 import { Alert } from 'react-native';
 
-const API_URL = 'https://api.spotify.com/v1/search';
+const API_URL: string = 'https://api.spotify.com/v1/search';
 
 export default class SearchStore {
   @observable query = '';
@@ -14,7 +14,7 @@ export default class SearchStore {
     return this.query;
   }
 
-  set query(artist) {
+  set query(artist: string) {
     this.query = artist;
   }
 
@@ -22,7 +22,7 @@ export default class SearchStore {
     return this.tracks;
   }
 
-  set tracks(result) {
+  set tracks(result: Array<Object>) {
     this.tracks = result;
   }
 
