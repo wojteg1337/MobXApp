@@ -1,6 +1,10 @@
 # MobXApp
 Basic MobX app with FlatList, StyledComponents, Flow, react-navigation.
 
+Example for medium blog post: 
+
+https://blog.callstack.io/write-react-native-apps-in-2017-style-with-mobx-e2dffc209fcb
+
 ## Installation
 
 Simply clone this repository with:
