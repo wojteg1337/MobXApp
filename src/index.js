@@ -4,10 +4,10 @@ import React, { Component } from 'react';
 import {
   AppRegistry,
 } from 'react-native';
-import { Provider } from 'mobx-react';
 
 import Stack from './router';
 
+import { Provider } from 'mobx-react';                           // eslint-disable-line
 import stores from './stores';
 
 export default class MobXApp extends Component {
