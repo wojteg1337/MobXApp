@@ -7,6 +7,13 @@
 
 ; Ignore unexpected extra "@providesModule"
 .*/node_modules/.*/node_modules/fbjs/.*
+.*/node_modules/react-native/Libraries/CustomComponents/Lists/.*
+.*/node_modules/react-navigation/src/routers/__tests__/.*
+.*/node_modules/react-navigation/src/views/__tests__/.*
+.*/node_modules/react-navigation/src/__tests__/.*
+.*/node_modules/styled-components/src/test/.*
+.*/node_modules/styled-components/dangerfile
+.*/node_modules/react-native/Libraries/Experimental/WindowedListView
 
 ; Ignore duplicate module providers
 ; For RN Apps installed via npm, "Libraries" folder is inside
@@ -25,6 +32,8 @@ flow/
 emoji=true
 
 module.system=haste
+
+esproposal.decorators=ignore
 
 experimental.strict_type_args=true
 
