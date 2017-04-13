@@ -1,0 +1,16 @@
+machine:
+  node:
+    version: 6.6.0
+  post:
+    - npm install -g yarn
+dependencies:
+  override:
+    - yarn install
+  cache_directories:
+    - ~/.npm
+    - ~/.yarn-cache
+    - node_modules
+test:
+  override:
+    - npm run lint
+    - npm run flow
